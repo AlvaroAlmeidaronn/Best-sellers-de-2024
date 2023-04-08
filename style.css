@@ -1,32 +1,30 @@
 :root{
-  box-sizing: border-box;
   overflow-x: hidden;
-}
-
-*{
-  font-family: roboto;
+  
 }
 
 body{
+  
   font-size: 20px;
   margin: 0px;
   width: 100vw;
   height: 100vh;
-  display: grid;
-    grid-template-areas:
-    "header header header"
-    ". main ."
-    "footer footer footer" ;
 
-    grid-template-columns: auto 75% auto;
-    grid-template-rows: auto 1fr auto;
+  display: grid;
+  grid-template-areas:
+  "header header header"
+  ". main ."
+  "footer footer footer" ;
+
+  grid-template-columns: auto 75% auto;
+  grid-template-rows: auto 1fr auto;
   
 }
 
 header{
   width: 100vw;
   height: 10vh;
-  background-color: #FFC7C7;
+  background-color: #bd904e;
   grid-area: header;
 }
 
@@ -40,30 +38,53 @@ main{
   grid-area: main;
 }
 
-p, #titulo{
+.text, .books{
   text-align: center;
 }
 
-#subtitulo{
-  font-size: 25px;
-
+.books{
+  margin: 50px 0px 30px 0px;
+  height: auto;
+  width: auto;
+  border-radius: 20px;
+  background-color: #fcf2e3;
 }
+
+.book-title{
+  height: auto;
+  width: auto;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #3c3327bc;
+  color: #fff;
+}
+
+
+.buy-buttom{ 
+  height: 30px;
+  width: auto;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  background-color: #28e935;
+}
+.buy-link{
+  size: auto;
+  color: #fff;
+  text-decoration: none;
+}
+
 
 .link{
   text-decoration: none;
   color: white;
 }
 
-#link-1, #link-2{
+#link-2{
   display: inline-block;
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
   border-radius: 20px;
   font-size: 15px;
-}
-
-#link-2{
   margin: 20px;
 }
 
@@ -73,20 +94,11 @@ p, #titulo{
   justify-content: center;
 }
 
-#sub-subtitulo{
-  font-size: 20px;
-}
-
-#texto{
-  text-align: center;
-  font-size: 18px;
-}
-
-
 footer{
   width: 100vw;
   height: 5vh;
-  background-color: #FFC7C7;
+  background-color: #bd904e;
   grid-area: footer;
 }
+
 
